@@ -108,8 +108,9 @@ endif
 
 $(METADATA-DIR)/regr.log.stamp: scripts/collect_results.py $(comp-results) $(MERGE-COV-STAMP)
 	@echo Collecting up results of tests into report regr.log
+	@echo Checkpoint 3 line111-ibex_sim.mk
 	$(verb)env PYTHONPATH=$(PYTHONPATH) \
 	./scripts/collect_results.py \
 	  --dir-metadata $(METADATA-DIR)
-	@echo Checkpoint 3 line114-ibex_sim.mk
+	@echo Checkpoint 4 line114-ibex_sim.mk
 	@touch $@
